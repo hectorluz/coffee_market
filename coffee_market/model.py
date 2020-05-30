@@ -8,8 +8,6 @@ from mesa.batchrunner import BatchRunner
 import pandas as pd
 import time
 
-import os
-
 def compute_supply(model):
     return int(model.supply)
 def compute_price(model):
