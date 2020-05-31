@@ -91,7 +91,7 @@ class MoneyModel(Model):
 
         if self.burn == True:
             if self.stock >= 0:
-                self.tax = 0.5 * (self.stock / self.supply)
+                self.tax = 0.5 * (self.stock / (self.supply + 0.1))
                 self.burned = (self.burned + self.stock)
                 self.stock = 0
             
